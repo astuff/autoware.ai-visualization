@@ -1,7 +1,7 @@
 stages:
   - build
   - deploy
-  
+
 variables:
   VCS_FILE: build_depends.repos
   AUTOWARE_CROSS_TARGET_PLATFORM: generic-aarch64
@@ -48,7 +48,7 @@ variables:
   artifacts:
     paths:
       - $CI_PROJECT_DIR/coverage.tar.gz
-    expire_in: 48 hrs 
+    expire_in: 48 hrs
   coverage: /\s*lines.*:\s(\d+\.\d+\%\s\(\d+\sof\s\d+.*\))/
   only:
     - merge_requests
@@ -111,7 +111,7 @@ build_kinetic:
     INSTALL_LCOV: git clone https://github.com/linux-test-project/lcov.git
     INSTALL_LCOV2: cd lcov
     INSTALL_LCOV3: git checkout v1.13
-    INSTALL_LCOV4: sudo make install 
+    INSTALL_LCOV4: sudo make install
     INSTALL_LCOV5: cd ..
     INSTALL_LCOV6: rm -r lcov
   <<: *build_common
