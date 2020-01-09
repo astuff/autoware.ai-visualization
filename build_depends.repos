@@ -2,15 +2,15 @@ repositories:
   depends/autoware/common:
     type: git
     url: https://gitlab.com/astuff/autoware.ai/common.git
-    version: as/master
+    version: oap5
   depends/autoware/messages:
     type: git
     url: https://gitlab.com/astuff/autoware.ai/messages.git
-    version: as/master
+    version: oap5
   depends/autoware/simulation:
     type: git
     url: https://gitlab.com/astuff/autoware.ai/simulation.git
-    version: as/master
+    version: oap5
   depends/vendor/lanelet2:
     type: git
     url: https://github.com/fzi-forschungszentrum-informatik/Lanelet2.git
